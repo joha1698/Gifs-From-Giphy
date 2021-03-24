@@ -1,0 +1,51 @@
+.divEstilos{
+    border: 1px solid #572ee5;
+    width: 512px;
+    height: auto;
+    margin: auto;
+    border-top: none;
+    border-radius: 25px;
+    margin-top: -20px;
+
+}
+.ulEstilos{
+    position: relative;
+    left: 0;
+    
+    
+}
+
+.liEstilos{
+    display: block;
+    margin-top: 0;
+    margin-left: 55px;
+    margin-left: 19px;
+}
+
+.aEstilos{
+    align-items: center;
+}
+
+.imgEstilos{
+    display: inline;
+    margin: 0;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.imgEstilos:hover{
+    background-color: green;
+}
+
+
+
+.pEstilos{
+    margin: 0;
+    color: #9cafc3;
+    font-weight: 400;
+    width: auto;
+    text-align: justify;
+    display: inline;
+    position: relative;
+    bottom: 5px;
+}

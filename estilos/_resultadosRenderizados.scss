@@ -1,0 +1,49 @@
+
+@media screen and (min-width: 300px){
+    
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 150px);
+        grid-gap: 20px;
+        padding: 18px;
+        padding-top: 60px;
+        
+        
+    }
+
+    .imagenesResultados{
+        width: 100%;
+        height: 100%;
+        //padding: 5px;
+        
+    }
+
+}
+
+
+@media screen and (min-width: 1200px){
+    
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        //display: none;
+        
+    }
+
+    .imagenesResultados{
+        width: 280px;
+        height: 200px;
+        margin: 0px;
+        margin-top: 80px;
+        position: relative;
+        top: -279px;
+        width: 100%;
+        
+    }
+
+
+}
+
+

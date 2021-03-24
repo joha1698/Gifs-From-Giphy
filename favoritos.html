@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <title>GIFOS</title>
+</head>
+<body id="body" >
+    <header>
+        <nav>
+            <div class="menu" id="menu">
+                <img src="imagenes/logo-desktop.svg" alt="Logo de GIFOS">
+                <input type="checkbox" id="inputMenu" />
+                <span class="hamburguesa1"></span>
+                <span class="hamburguesa1"></span>
+                <span class="hamburguesa1"></span>
+                <ul>
+                
+                    <li ><a href="#" class="letraBlanca" id="modo">Modo Nocturno</a></li>
+                    <li ><a href="#" class="letraBlanca" id="favorito">Favorito</a></li>
+                    <li ><a href="#" class="letraBlanca" id="misGifos">Mis Gifos</a></li> 
+                    
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main id="main">
+
+        
+        <div id="favoritos" class="favoritos">
+            <img src="./imagenes/icon-favoritos.svg" alt="" />
+            <h2>Favoritos</h2>
+            <div id="favoritosVacio">
+                <img src="/imagenes/icon-fav-sin-contenido.svg" alt="" />
+                <p>"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"</p>
+            </div>
+            <div id="favoritosConResultados">
+                
+                <button id="botonFavoritos">VER MAS</button>
+            </div>
+        </div>
+        
+        <div id="trendingFavorito">
+            <div id="trending" class="trending">
+
+                <div id="trendingCabecera" class="trendingCabecera">
+                    <h1 id="tituloResultadoTrendings"class="letraBlanca">Trending GIFOS</h1>
+                    <P id="descripcionResultados"class="letraBlanca">Mira los últimos GIFOS de nuestra comunidad.</P>
+                </div>
+    
+                
+                <div id="contendorPrincipalCarrusel" class="contendorPrincipalCarrusel">
+                    <span class="flechas" id="flechaIzquierda"><</span>
+                    <span class="flechas" id="flechaDerecha">></span>  
+                    
+                    <div id="contenedorCarrusel" class="contenedorCarrusel">
+                        <div id="carrusel" class="carrusel">
+                    <!--
+                        <div class="gifCarrusel">
+                                <img src="https://www.calliaweb.co.uk/wp-content/uploads/2015/10/300x200.jpg" alt="">
+                            </div>
+                        -->
+    
+                        </div>
+                    </div>                                
+                </div>
+            </div>
+
+        </div>
+
+        
+
+        
+        
+    </main>
+    <footer>
+        <p>Compartir en:</p>
+        <div>
+            <ul>
+                
+                <li><a href="#"><img src="imagenes/icon_facebook.svg" alt="icono facebook"></a></li>
+                <li><a href="#"><img src="imagenes/icon-twitter.svg" alt="icono twitter"></a></li>
+                <li><a href="#"><img src="imagenes/icon_instagram.svg" alt="icono instagram"></a></li>
+      
+            </ul>
+
+        </div>
+        
+
+
+    </footer>
+    
+   <!--<script src="./JavaScript/modoNocturno.js"></script>  --> 
+   <!-- <script src="./JavaScript/buscadorAPI.js"></script> --> 
+   <script src="./JavaScript/modoNocturno-favorito.js"></script> 
+    <script src="./JavaScript/trendingAPI-favorito.js"></script>
+    <script src="./JavaScript/slider.js"></script>
+    <script src="./JavaScript/favoritos.js"></script> 
+</body>
+</html>
+

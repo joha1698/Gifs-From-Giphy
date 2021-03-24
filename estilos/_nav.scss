@@ -1,0 +1,180 @@
+//Nav en mobiles, ocultando elementos
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    header{
+        nav{
+            width: 100%;
+            height: auto;
+
+            
+
+            div{
+                display: block;
+                width: 100%;
+                background-color: white;
+                height: 85px;
+
+                img{
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    width: 45px;
+                    height: auto;
+                }
+
+                input{
+                    opacity: 0;
+                }
+
+                
+
+            }
+
+            #crear{
+                display: none;
+            }
+        }
+    }
+}
+
+
+//input transparente y en primer plano
+
+body header nav div input{
+    position: absolute;
+    right: 10px;;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    opacity: 0%;
+    left: 286px;
+    top: 12px;
+}
+
+//menú navegable sin desplegar
+
+body header nav div ul{
+    display: inline;
+    li{
+        display: none;
+    }
+    
+}
+
+//menu navegable desplegado
+
+body header nav div #inputMenu:checked ~ ul{
+    height: 100vh;
+    transition: height 2s ease;
+    z-index: 2;
+    display: block;
+    background-color: 	#4a1ee3;
+    opacity: 80%;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+
+    
+
+    li{
+        
+        display: block;
+        text-align: center;
+        height: 60px;
+        border-bottom: white;
+        margin-top: 10px;
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        
+    }
+
+    li:first-child{
+        margin-top: 50px
+
+    }
+    
+}
+
+//lineas del menu hamburguesa//
+body header nav div span{
+
+    display: block;
+    width: 32px;
+    height: 3px;
+    margin-bottom: 6.5px;
+    background-color: gray;
+    z-index: 1;
+    position: relative;
+    top:-37px;
+    right: -300px;
+    transition: transform 0.5s ease,
+    opacity 0.5s ease;
+
+   
+}
+
+
+/*Pasando a cruz*/
+body header nav div input:checked ~ span{
+    transform: rotate(45deg) translate(11px, -1px);
+}
+header nav div input:checked ~ span:nth-last-child(2){
+    transform: rotate(135deg) translate(-12px, 3px);
+}
+header nav div input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+}
+
+//VERSION DE ESCRITORIO
+
+@media screen and (min-width: 1200px){
+    body header nav{
+        div{
+            input{
+                display: none;
+            }
+    
+            span{
+                display: none;
+                background-color: none; 
+            } 
+    
+            ul{
+                display: inline;
+                position: relative;          
+                left: 48%;
+                
+                bottom: 30px;
+    
+                li{
+                    display: inline;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-right: 42px;
+                    
+    
+                    a{
+                        text-decoration-line: none;
+                        color: #4a1ee3;
+                    }
+                }
+            }
+    
+        } 
+
+        #crear{
+            display: inline-block;
+            width: 50px;
+            position: relative;
+            left: 89%;
+            bottom: 89px;
+        }
+
+    }
+
+} 

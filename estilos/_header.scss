@@ -1,0 +1,207 @@
+body header nav h2{
+    display: block;
+    width: 70%;
+    font-size: 30px;
+    color: 	#4a1ee3;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 48px;
+
+    span{
+        color: #4fe3c1;
+    }
+}
+
+body header nav img{
+    width: 80%;
+    height: auto;
+    margin-left: 34px;
+}
+body header nav #buscador{
+ 
+    height: 40px;
+    border-radius: 108px 108px 108px 108px;
+    border: 1px solid 	#4a1ee3;
+    padding-left: 19px;
+    width: 301px;
+    margin-left: 15px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -5px;
+    font-size: 15px;
+
+}
+
+body header nav div #iconoBusqueda{
+    width: 21px;
+    position: relative;
+    bottom: 38px;
+    top: -132px;
+    left: 277px;
+}
+
+body header nav div #x{
+    position: relative;
+    opacity: 0%;
+    width: 36px;
+    top: -20;
+    top: -55px;
+}
+body header nav #cerrar{
+    height: 0;
+}
+body header nav div .cerrar{
+    display: inline;
+    position: relative;
+    top: -90px;
+    display: block;
+    width: 15px;
+    height: 1px;
+    margin-bottom: 6.5px;
+    background-color:	#4a1ee3;
+    z-index: 1;
+    opacity: 0%;
+    
+
+}
+
+body header nav div #x:checked ~ .cerrar{
+    transform:rotate(45deg) translate(5px, 2px);
+    opacity: 100%;
+    margin: 0;
+    
+    
+}
+
+body header nav div #x:checked ~ .cerrar:nth-last-child(2){
+    transform: rotate(135deg) translate(2px, -4px);
+    opacity: 100%;
+    margin: 0;
+
+}
+    
+
+
+body header nav div #x:checked ~ img{
+    display: none;
+}
+
+
+body header nav #sugerenciaTrendings{
+    text-align: center;
+
+    #tituloTrending{
+        margin: 0;
+        color: #4a1ee3;
+        margin-bottom: 5px;
+    }
+
+    #listaSugerenciaTrendings{
+        display: block;
+        top: 0px;
+        left: 420px;
+        bottom: 0px;
+        width: 550px;
+        padding-left: 0px;
+        margin: auto;
+        
+
+        .listaTrending{
+            display: inline;
+            width: 60%;
+            margin-bottom: 41px;
+            text-align: center;
+            line-height: 21px;
+            
+            a{  
+                cursor: pointer;
+                display: inline-block;
+                font-size: 16px;
+                color: #4a1ee3;
+                text-decoration: none;
+                margin-right: 15px;
+                
+            }
+
+        }
+    }
+}
+
+
+
+//VERSION DE ESCRITORIO
+
+@media screen and (min-width: 1200px){
+    body header nav{
+        h2{
+            width: 46%;
+            margin: auto;
+            font-size: 40px;
+
+        }
+
+        img{
+            width: 400px;
+            display: block;
+            margin: auto;
+            padding-top: 26px;
+        }
+
+        #buscador{
+            width: 503px;
+            height: 48px;
+            
+
+
+        }
+
+        div{
+            #x{
+                opacity:0;
+                display: block;
+                left: 828px;
+            }
+            .cerrar{
+
+                left: 840px;
+                top: -93px;
+
+            }
+
+            #iconoBusqueda{
+                left: 820px;
+                top: -150px;
+            }
+
+        }
+
+        //Aqui
+
+        #sugerenciaTrendings{
+            
+            text-align: center;
+            margin-bottom: 80px;
+            
+        
+            #listaSugerenciaTrendings{
+                left: 0;
+                width: 600px;
+                margin: auto;
+                margin-top: 10px;
+                
+
+                .listaTrending{
+                    margin: 0;
+                    
+        
+                }
+            }
+        }
+
+
+    }
+
+}
+
+

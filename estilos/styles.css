@@ -1,0 +1,673 @@
+body header nav h2 {
+  display: block;
+  width: 70%;
+  font-size: 30px;
+  color: #4a1ee3;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 48px;
+}
+
+body header nav h2 span {
+  color: #4fe3c1;
+}
+
+body header nav img {
+  width: 80%;
+  height: auto;
+  margin-left: 34px;
+}
+
+body header nav #buscador {
+  height: 40px;
+  border-radius: 108px 108px 108px 108px;
+  border: 1px solid 	#4a1ee3;
+  padding-left: 19px;
+  width: 301px;
+  margin-left: 15px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -5px;
+  font-size: 15px;
+}
+
+body header nav div #iconoBusqueda {
+  width: 21px;
+  position: relative;
+  bottom: 38px;
+  top: -132px;
+  left: 277px;
+}
+
+body header nav div #x {
+  position: relative;
+  opacity: 0%;
+  width: 36px;
+  top: -20;
+  top: -55px;
+}
+
+body header nav #cerrar {
+  height: 0;
+}
+
+body header nav div .cerrar {
+  display: inline;
+  position: relative;
+  top: -90px;
+  display: block;
+  width: 15px;
+  height: 1px;
+  margin-bottom: 6.5px;
+  background-color: #4a1ee3;
+  z-index: 1;
+  opacity: 0%;
+}
+
+body header nav div #x:checked ~ .cerrar {
+  -webkit-transform: rotate(45deg) translate(5px, 2px);
+          transform: rotate(45deg) translate(5px, 2px);
+  opacity: 100%;
+  margin: 0;
+}
+
+body header nav div #x:checked ~ .cerrar:nth-last-child(2) {
+  -webkit-transform: rotate(135deg) translate(2px, -4px);
+          transform: rotate(135deg) translate(2px, -4px);
+  opacity: 100%;
+  margin: 0;
+}
+
+body header nav div #x:checked ~ img {
+  display: none;
+}
+
+body header nav #sugerenciaTrendings {
+  text-align: center;
+}
+
+body header nav #sugerenciaTrendings #tituloTrending {
+  margin: 0;
+  color: #4a1ee3;
+  margin-bottom: 5px;
+}
+
+body header nav #sugerenciaTrendings #listaSugerenciaTrendings {
+  display: block;
+  top: 0px;
+  left: 420px;
+  bottom: 0px;
+  width: 550px;
+  padding-left: 0px;
+  margin: auto;
+}
+
+body header nav #sugerenciaTrendings #listaSugerenciaTrendings .listaTrending {
+  display: inline;
+  width: 60%;
+  margin-bottom: 41px;
+  text-align: center;
+  line-height: 21px;
+}
+
+body header nav #sugerenciaTrendings #listaSugerenciaTrendings .listaTrending a {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  color: #4a1ee3;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  body header nav h2 {
+    width: 46%;
+    margin: auto;
+    font-size: 40px;
+  }
+  body header nav img {
+    width: 400px;
+    display: block;
+    margin: auto;
+    padding-top: 26px;
+  }
+  body header nav #buscador {
+    width: 503px;
+    height: 48px;
+  }
+  body header nav div #x {
+    opacity: 0;
+    display: block;
+    left: 828px;
+  }
+  body header nav div .cerrar {
+    left: 840px;
+    top: -93px;
+  }
+  body header nav div #iconoBusqueda {
+    left: 820px;
+    top: -150px;
+  }
+  body header nav #sugerenciaTrendings {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  body header nav #sugerenciaTrendings #listaSugerenciaTrendings {
+    left: 0;
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  body header nav #sugerenciaTrendings #listaSugerenciaTrendings .listaTrending {
+    margin: 0;
+  }
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body header nav {
+  width: 100%;
+  height: auto;
+}
+
+body header nav div {
+  display: block;
+  width: 100%;
+  background-color: white;
+  height: 85px;
+}
+
+body header nav div img {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 45px;
+  height: auto;
+}
+
+body header nav div input {
+  opacity: 0;
+}
+
+body header nav #crear {
+  display: none;
+}
+
+body header nav div input {
+  position: absolute;
+  right: 10px;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  opacity: 0%;
+  left: 286px;
+  top: 12px;
+}
+
+body header nav div ul {
+  display: inline;
+}
+
+body header nav div ul li {
+  display: none;
+}
+
+body header nav div #inputMenu:checked ~ ul {
+  height: 100vh;
+  -webkit-transition: height 2s ease;
+  transition: height 2s ease;
+  z-index: 2;
+  display: block;
+  background-color: #4a1ee3;
+  opacity: 80%;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+
+body header nav div #inputMenu:checked ~ ul li {
+  display: block;
+  text-align: center;
+  height: 60px;
+  border-bottom: white;
+  margin-top: 10px;
+}
+
+body header nav div #inputMenu:checked ~ ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+body header nav div #inputMenu:checked ~ ul li:first-child {
+  margin-top: 50px;
+}
+
+body header nav div span {
+  display: block;
+  width: 32px;
+  height: 3px;
+  margin-bottom: 6.5px;
+  background-color: gray;
+  z-index: 1;
+  position: relative;
+  top: -37px;
+  right: -300px;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+/*Pasando a cruz*/
+body header nav div input:checked ~ span {
+  -webkit-transform: rotate(45deg) translate(11px, -1px);
+          transform: rotate(45deg) translate(11px, -1px);
+}
+
+header nav div input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(135deg) translate(-12px, 3px);
+          transform: rotate(135deg) translate(-12px, 3px);
+}
+
+header nav div input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  body header nav div input {
+    display: none;
+  }
+  body header nav div span {
+    display: none;
+    background-color: none;
+  }
+  body header nav div ul {
+    display: inline;
+    position: relative;
+    left: 48%;
+    bottom: 30px;
+  }
+  body header nav div ul li {
+    display: inline;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 42px;
+  }
+  body header nav div ul li a {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    color: #4a1ee3;
+  }
+  body header nav #crear {
+    display: inline-block;
+    width: 50px;
+    position: relative;
+    left: 89%;
+    bottom: 89px;
+  }
+}
+
+body main {
+  background-color: #E0E0E0;
+  width: 100%;
+  height: auto;
+  padding-bottom: 35px;
+}
+
+body main .trending .trendingCabecera h1 {
+  font-size: x-large;
+  text-align: center;
+  color: #4a1ee3;
+  padding-top: 41px;
+}
+
+body main .trending .trendingCabecera p {
+  line-height: 19px;
+  text-align: center;
+  width: 179px;
+  margin: auto;
+  margin-bottom: 28px;
+  font-size: 13px;
+}
+
+body main #trending #contendorPrincipalCarrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body main #trending #contendorPrincipalCarrusel .flechas {
+  color: #4a1ee3;
+  border: solid #4a1ee3;
+  padding: 10px 15px 10px 15px;
+  position: absolute;
+  height: 45px;
+  top: calc(50% - 25%);
+  margin: 10px;
+  border-radius: 5%;
+  font-size: 45px;
+  bottom: 151px;
+  z-index: 5;
+}
+
+body main #trending #contendorPrincipalCarrusel #flechaIzquierda {
+  left: 0;
+}
+
+body main #trending #contendorPrincipalCarrusel #flechaDerecha {
+  right: 0;
+}
+
+body main #trending #contendorPrincipalCarrusel .flechas:hover {
+  color: white;
+  background-color: #4a1ee3;
+  border: solid #4a1ee3;
+}
+
+body main #trending #contendorPrincipalCarrusel .contenedorCarrusel {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body main #trending #contendorPrincipalCarrusel .contenedorCarrusel .carrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 200px;
+}
+
+body main #trending #contendorPrincipalCarrusel .contenedorCarrusel .carrusel .gifCarrusel {
+  min-width: 20%;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 2px;
+          box-shadow: 2px;
+}
+
+body main #trending #contendorPrincipalCarrusel .contenedorCarrusel .carrusel .gifCarrusel img {
+  width: 100%;
+  height: 150px;
+  margin-top: 0;
+}
+
+body main #trending #contendorPrincipalCarrusel .contenedorCarrusel .carrusel .gifCarrusel.hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@media screen and (min-width: 1200px) {
+  body main .trending {
+    margin-bottom: 70px;
+  }
+  body main .trending .trendingCabecera p {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  body main .trending .contendorPrincipalCarrusel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  body main .trending .contendorPrincipalCarrusel .flechas {
+    color: #4a1ee3;
+    border: solid #4a1ee3;
+    padding: 10px 15px 10px 15px;
+    position: absolute;
+    height: 45px;
+    top: calc(50% - 25%);
+    margin: 10px;
+    border-radius: 5%;
+    font-size: 45px;
+    bottom: 151px;
+    z-index: 5;
+  }
+  body main .trending .contendorPrincipalCarrusel #flechaIzquierda {
+    left: 0;
+  }
+  body main .trending .contendorPrincipalCarrusel #flechaDerecha {
+    right: 0;
+  }
+  body main .trending .contendorPrincipalCarrusel .flechas:hover {
+    color: white;
+    background-color: #4a1ee3;
+    border: solid #4a1ee3;
+  }
+  body main .trending .contendorPrincipalCarrusel .contenedorCarrusel {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  body main .trending .contendorPrincipalCarrusel .contenedorCarrusel .carrusel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 200px;
+  }
+  body main .trending .contendorPrincipalCarrusel .contenedorCarrusel .carrusel .gifCarrusel {
+    min-width: 20%;
+    padding: 0;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 5px;
+            box-shadow: 5px;
+  }
+  body main .trending .contendorPrincipalCarrusel .contenedorCarrusel .carrusel .gifCarrusel img {
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    top: 0;
+  }
+}
+
+body footer p {
+  margin-top: 52px;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+body footer div {
+  text-align: center;
+}
+
+body footer div ul {
+  list-style: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+body footer div ul li {
+  display: inline;
+  margin: 8px;
+  padding-bottom: 30px;
+}
+
+.dark {
+  background-color: #37383c;
+  color: blanchedalmond;
+}
+
+.lineasBlancas {
+  background-color: white;
+}
+
+.darkMain {
+  background-color: #222327;
+}
+
+.letraClara {
+  color: white;
+}
+
+@media screen and (min-width: 300px) {
+  .grilla {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (150px)[6];
+        grid-template-rows: repeat(6, 150px);
+    grid-gap: 20px;
+    padding: 18px;
+    padding-top: 60px;
+  }
+  .imagenesResultados {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grilla {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (200px)[3];
+        grid-template-rows: repeat(3, 200px);
+  }
+  .imagenesResultados {
+    width: 280px;
+    height: 200px;
+    margin: 0px;
+    margin-top: 80px;
+    position: relative;
+    top: -279px;
+    width: 100%;
+  }
+}
+
+.divEstilos {
+  border: 1px solid #572ee5;
+  width: 512px;
+  height: auto;
+  margin: auto;
+  border-top: none;
+  border-radius: 25px;
+  margin-top: -20px;
+}
+
+.ulEstilos {
+  position: relative;
+  left: 0;
+}
+
+.liEstilos {
+  display: block;
+  margin-top: 0;
+  margin-left: 55px;
+  margin-left: 19px;
+}
+
+.aEstilos {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgEstilos {
+  display: inline;
+  margin: 0;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.imgEstilos:hover {
+  background-color: green;
+}
+
+.pEstilos {
+  margin: 0;
+  color: #9cafc3;
+  font-weight: 400;
+  width: auto;
+  text-align: justify;
+  display: inline;
+  position: relative;
+  bottom: 5px;
+}
+
+.favorito {
+  background-color: rgba(87, 46, 229, 0.6);
+  height: 200px;
+  position: relative;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.divContenedor {
+  height: 200px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.divContenedorIconos {
+  width: auto;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.icono {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.esconderResultados {
+  display: none;
+}
+
+main .favoritos {
+  text-align: center;
+  padding-top: 60px;
+}
+
+main .favoritos h2 {
+  font-size: 25px;
+  line-height: 30px;
+  color: #572ee5;
+}
+
+main .favoritos p {
+  font-size: 25px;
+  line-height: 30px;
+  color: #572ee5;
+}
+
+#favoritosConResultados {
+  margin-bottom: 60px;
+}
+
+#botonFavoritos {
+  margin-bottom: 60px;
+}
+
+* {
+  font-family: sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */
